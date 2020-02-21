@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        android:id="@+id/relativeLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        />
+
+        <ImageView
+            android:layout_width="150px"
+            android:layout_height="200px"
+            android:id="@+id/imageEvent"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:id="@+id/titleEventText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TextView"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="60dp"
+            />
+
+        <TextView
+            android:id="@+id/startDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/titleEventText"
+            android:text="@string/TextView"
+            android:textColor="@color/colorAccent"
+            android:layout_marginLeft="60dp"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TextView"
+            android:layout_below="@+id/startDateText"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/endDateText"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TextView"
+            android:layout_below="@+id/endDateText"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/venue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/TextView"
+            android:layout_below="@id/venue"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/location"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/movieTitleEvent"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/movieTitleEvent"
+            android:layout_marginLeft="60dp"
+            android:id="@+id/yearMovieEvent"/>
+
+
+
+
+        <Button
+            android:id="@+id/deleteEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:text="@string/delete"
+            />
+
+        <Button
+            android:id="@+id/editEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/deleteEvent"
+            android:layout_alignParentRight="true"
+            android:onClick="onClick"
+            android:text="@string/edit" />
+
+        <Button
+            android:id="@+id/mapButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editEvent"
+            android:layout_alignParentRight="true"
+            android:text="@string/map"/>
+
+        <Button
+            android:id="@+id/distanceMatrix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/mapButton"
+            android:text="@string/distance"/>
+
+
+
+</RelativeLayout>

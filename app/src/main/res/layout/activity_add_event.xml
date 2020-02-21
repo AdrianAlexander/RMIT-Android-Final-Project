@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.viewTemplate">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="60dp"
+            android:text="@string/id"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignLeft="@id/addIdEvent"
+            android:layout_alignBaseline="@id/addIdEvent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="60dp"
+            android:text="@string/title"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignLeft="@id/addTitleEvent"
+            android:layout_alignBaseline="@id/addTitleEvent"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/addDateStart"
+            android:inputType="datetime"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/start_date"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/addDateEnd"
+            android:inputType="datetime"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/end_date"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/addVenue"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/venue"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/addLocation"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/location"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/addEventMovieTitle"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/movie_title"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/addEventMovieYear"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/movie_year"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/addEventMovieImage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/movie_image"
+            android:textSize="20sp"
+
+            />
+
+        <EditText
+            android:id="@+id/addEventMovieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            />
+
+        <EditText
+            android:id="@+id/addEventMovieYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            android:layout_below="@id/addEventMovieTitle"
+            />
+
+        <EditText
+            android:id="@+id/addEventMovieImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            android:layout_below="@id/addEventMovieYear"
+            />
+
+        <EditText
+            android:id="@+id/addIdEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/addEventMovieImage"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+
+            />
+
+        <EditText
+            android:id="@+id/addTitleEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            android:layout_below="@+id/addIdEvent"
+            />
+
+
+        <EditText
+            android:id="@+id/addDateStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/addTitleEvent"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+           />
+
+        <EditText
+            android:id="@+id/addDateEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/addDateStart"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/addVenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/addDateEnd"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            />
+
+        <EditText
+            android:id="@+id/addLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/addVenue"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="30dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/addEventOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:layout_below="@id/addLocation"
+            android:layout_marginHorizontal="100dp"/>
+
+        <Button
+            android:id="@+id/addMovee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_movie"
+            android:layout_toRightOf="@id/addEventMovieYear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="10dp"/>
+
+
+        <Button
+            android:id="@+id/addEventCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_below="@id/addLocation"
+            android:layout_marginHorizontal="220dp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

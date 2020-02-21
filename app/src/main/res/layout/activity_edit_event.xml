@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.viewTemplate">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="60dp"
+            android:text="@string/title"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignLeft="@id/editTitle"
+            android:layout_alignBaseline="@id/editTitle"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/editDateStart"
+            android:inputType="datetime"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/start_date"
+            android:textSize="20sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/editDateEnd"
+            android:inputType="datetime"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/end_date"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/addAttendes"
+            android:inputType="datetime"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/attendees"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/editVenue"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/venue"
+            android:textSize="20sp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/editLocation"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/location"
+            android:textSize="20sp"
+
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/editMovieTitle"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/movie_title"
+            android:textSize="20sp"
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/editMovieYear"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/movie_year"
+            android:textSize="20sp"
+
+
+
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/editMovieImage"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="206dp"
+            android:text="@string/movie_image"
+            android:textSize="20sp"
+
+            />
+
+
+        <EditText
+            android:id="@+id/editMovieTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            />
+
+        <EditText
+            android:id="@+id/editMovieYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            android:layout_below="@id/editMovieTitle"
+            />
+
+        <EditText
+            android:id="@+id/editMovieImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            android:layout_below="@id/editMovieYear"
+            />
+
+        <EditText
+            android:id="@+id/editTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="5dp"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/textView3"
+            android:layout_below="@+id/editMovieImage"
+            />
+
+        <EditText
+            android:id="@+id/editDateStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/editTitle"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/editDateEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/editDateStart"
+
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/editVenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/editDateEnd"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/editLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/editVenue"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="5dp"
+            />
+
+        <EditText
+            android:id="@+id/addAttendes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_below="@id/editLocation"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="30dp"
+            />
+
+
+        <Button
+            android:id="@+id/editEventOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ok"
+            android:layout_below="@id/addAttendes"
+            android:layout_marginHorizontal="100dp"/>
+
+        <Button
+            android:id="@+id/attendes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/attendees"
+            android:layout_below="@id/editEventOk"
+            android:layout_marginHorizontal="100dp"/>
+
+        <Button
+            android:id="@+id/addMov"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_movie"
+            android:layout_toRightOf="@id/editMovieYear"
+            android:layout_centerHorizontal="true"
+            android:layout_marginHorizontal="10dp"/>
+
+
+        <Button
+            android:id="@+id/editEventCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel"
+            android:layout_below="@id/addAttendes"
+            android:layout_marginHorizontal="220dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

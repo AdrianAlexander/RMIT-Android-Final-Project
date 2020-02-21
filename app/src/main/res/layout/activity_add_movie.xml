@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.AddMovie">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <Button
+            android:id="@+id/addButon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_button"
+            android:layout_below="@id/imageM"
+            android:layout_alignLeft="@+id/imageM"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/cancelButton"
+            android:text="@string/cancel"
+            android:layout_below="@+id/imageM"
+            android:layout_alignRight="@+id/imageM"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:ems="10"
+            android:layout_marginBottom="50dp"
+            android:layout_marginTop="50dp"
+            android:id="@+id/idM"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/titleM"
+            android:ems="10"
+            android:layout_below="@+id/idM"
+            android:layout_marginBottom="50dp"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/titleM"
+            android:ems="10"
+            android:layout_marginBottom="50dp"
+            android:id="@+id/yearM"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/yearM"
+            android:ems="10"
+            android:id="@+id/imageM"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Id"
+            android:layout_alignBaseline="@+id/idM"
+            android:layout_alignLeft="@+id/idM"
+            android:layout_marginLeft="-50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title"
+            android:layout_alignBaseline="@+id/titleM"
+            android:layout_alignLeft="@+id/titleM"
+            android:layout_marginLeft="-50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/year"
+            android:layout_alignBaseline="@+id/yearM"
+            android:layout_alignLeft="@+id/yearM"
+            android:layout_marginLeft="-50dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/image"
+            android:layout_alignBaseline="@+id/imageM"
+            android:layout_alignLeft="@+id/imageM"
+            android:layout_marginLeft="-50dp"/>
+
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
